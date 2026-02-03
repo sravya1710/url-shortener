@@ -16,16 +16,16 @@ public class Url {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-    private String long_url;
-    private String short_url;
+    private String longUrl;
+    private String shortUrl;
 
     public Url() {
     }
 
-    public Url(Long id ,String long_url, String short_url) {
+    public Url(Long id ,String longUrl, String shortUrl) {
         this.id=id;
-        this.long_url = long_url;
-        this.short_url = short_url;
+        this.longUrl = longUrl;
+        this.shortUrl = shortUrl;
     }
 
     public Long getId() {
@@ -36,28 +36,28 @@ public class Url {
         this.id = id;
     }
 
-    public String getLong_url() {
-        return long_url;
+    public String getLongUrl() {
+        return longUrl;
     }
 
-    public void setLong_url(String long_url) {
-        this.long_url = long_url;
+    public void setLongUrl(String longUrl) {
+        this.longUrl = longUrl;
     }
 
-    public String getShort_url() {
-        return short_url;
+    public String getShortUrl() {
+        return shortUrl;
     }
 
-    public void setShort_url(String short_url) {
-        this.short_url = short_url;
+    public void setShortUrl(String shortUrl) {
+        this.shortUrl = shortUrl;
     }
 
     @Override
     public String toString() {
         return "Url{" +
                 "id=" + id +
-                ", long_url='" + long_url + '\'' +
-                ", short_url='" + short_url + '\'' +
+                ", long_url='" + longUrl + '\'' +
+                ", short_url='" + shortUrl + '\'' +
                 '}';
     }
 }
